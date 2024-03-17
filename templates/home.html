@@ -24,9 +24,11 @@
             Optio illum quisquam dolorum, libero vel sequi iure natus?
         </p>
         <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-        <p class="lead text-center">
-            TODO - Show the jobs here
-        </p>
+        <div class="lead">
+            {% for job in jobs %}
+                {% include 'jobitem.html' %}
+            {% endfor %}
+        </div>
         <div class="text-center">
             <button class="btn btn-primary btn-lg">Contact Us</button>
             <p class="mt-4">Copyright 2024, Jovian</p>
